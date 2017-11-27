@@ -1,7 +1,3 @@
-angular.module('app').controller('appController', function($scope){
-    
-
-    
-    
-    
-    });
+angular.module('myApp').controller('myCtrl', function($scope){
+    $scope.test = "I am working"
+  })
