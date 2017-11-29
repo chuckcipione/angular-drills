@@ -1,8 +1,4 @@
-angular.module('app').controller('myController', function($scope,myService){
-    $scope.myData = myService.myData;
-
-    $scope.filterObj = {
-        email: '.uk',
-        phone: '1'
-    }
-})
+angular.module('myApp').controller('myCtrl',function($scope,myService){
+    $scope.contacts = myService.getContacts()
+    $scope.test = "I am working!"
+  })
